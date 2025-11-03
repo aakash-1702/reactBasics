@@ -58,9 +58,9 @@ function App() {
   //   generatePassword();
   // }, [length, numberAllowed, charAllowed]);
 
-  useEffect(() => {
-    generatePassword();
-  },[length , numberAllowed , charAllowed]);
+  // useEffect(() => {
+  //   generatePassword();
+  // },[length , numberAllowed , charAllowed]);
 
   return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
@@ -120,6 +120,7 @@ function App() {
           <label htmlFor="charInput">Character</label>
         </div>
       </div>
+      <button onClick={generatePassword}>Generate Password</button>
     </div>
   );
 }
